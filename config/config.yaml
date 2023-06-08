@@ -1,0 +1,10 @@
+coco:
+  file: /home/u1920603/PycharmProjects/vehicle_counter/config/coco.names
+
+model:
+  model_configuration: /home/u1920603/PycharmProjects/vehicle_counter/config/yolov3-320.cfg
+  model_weights: /home/u1920603/PycharmProjects/vehicle_counter/config/yolov3-320.weights
+
+detection:
+  threshold: 0.2
+  nms_threshold: 0.2

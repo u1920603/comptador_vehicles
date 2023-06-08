@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  api:
+    build: ./vehicle_counter/app
+    volumes:
+      - .:/code
+    ports:
+      - '8000:8000'
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:6-jammy
+    ports:
+      - '27017:27017'
+    volumes:
+      - dbdata6:/data/db
+
+volumes:
+  dbdata6:
