@@ -1,9 +1,9 @@
 coco:
-  file: /home/u1920603/PycharmProjects/vehicle_counter/config/coco.names
+  file: /code/config/coco.names
 
 model:
-  model_configuration: /home/u1920603/PycharmProjects/vehicle_counter/config/yolov3-320.cfg
-  model_weights: /home/u1920603/PycharmProjects/vehicle_counter/config/yolov3-320.weights
+  model_configuration: /code/config/yolov3-320.cfg
+  model_weights: /code/config/yolov3-320.weights
 
 detection:
   threshold: 0.2
