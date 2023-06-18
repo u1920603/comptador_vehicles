@@ -19,6 +19,7 @@ services:
 
   detector:
     build: .
+    command: bash -c "xhost +local:"
     environment:
       - DISPLAY=$DISPLAY
       - XAUTHORITY=/tmp/.docker.xauth
