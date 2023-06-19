@@ -10,7 +10,7 @@ class Camera(Document):
     """Camera type."""
     name = StringField()
     created_at = DateTimeField(default=datetime.utcnow)
-    updated_at = DateTimeField(default=None)
+    updated_at = DateTimeField(default=datetime.utcnow)
     location = StringField()
 
     measurements = ListField(EmbeddedDocumentField(HistoryRegistry))
